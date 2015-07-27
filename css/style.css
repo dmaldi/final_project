@@ -47,12 +47,104 @@ Developer @GA in NYC
 
 body {
      color: #000;
-     font-size: 12px;
+     font-size: 16px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Oswald', sans-serif;     
      margin:0px;
+     background-color: rgb(165,165,165);
+     width: 100%;
 }
+
+header {
+     padding: 2%;
+}
+
+.logo {
+     float: left;
+     display: inline-block;
+}
+
+.hamburger {
+     float: right;
+     vertical-align: baseline;
+     display: inline-block;
+}
+
+h1 {
+     font-family: 'Lobster Two', cursive;
+     font-size: 3em;
+     color: white;
+     margin: 0 auto;
+     text-align: center;
+     padding: 2%;
+}
+
+.logos {
+     float: right;
+     vertical-align: baseline;
+     display: inline-block;
+     padding-right: 1%;
+
+}
+
+.onion {
+     padding: 3%;
+     margin: 0 auto;
+}
+
+footer p {
+     padding: 2%;
+     color: white;
+     display: inline-block;
+}
+
+
 
 /******************************************
 /* LAYOUT                   
 /*******************************************/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+     .logo {
+          height: 2em;
+     }
+
+     .hamburger {
+          height: 1.5em;
+     }
+
+     h1 {
+          font-size: 2em;
+     }
+
+     .onion {
+          height: 20em;
+     }
+
+     .arrow1, .arrow2 {
+          height: 2.5em;
+     }
+
+     .arrow1 {
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          filter: FlipH;
+          -ms-filter: "FlipH";
+     }
+
+     footer p {
+          font-size: .75em;
+          display: block;
+          text-align: center;
+     }
+
+     .logos {
+          height: 2em;
+          margin: 0 auto;
+          float: none;
+     }
+
+}
