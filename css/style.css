@@ -1,7 +1,7 @@
 /* 
-Project Name: Blank Template
+Project Name: Moody Food
 Client: Your Client
-Author: Your Name
+Author: Daisy Maldonado
 Developer @GA in NYC
 */
 
@@ -46,27 +46,32 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
+     color: white;
      font-size: 16px;
      line-height: 1.4;
      font-family: 'Oswald', sans-serif;     
-     margin:0px;
+     margin: 0px;
      background-color: rgb(165,165,165);
      width: 100%;
-}
-
-header {
-     padding: 2%;
+     text-transform: uppercase;
 }
 
 .logo {
      float: left;
      display: inline-block;
+     padding: 2em;
 }
 
 .hamburger {
      float: right;
-     vertical-align: baseline;
+     display: inline-block;
+     padding: 3em 2em 2em 2em;
+}
+
+nav ul li a {
+     text-decoration: none;
+     color: white;
+     float: left;
      display: inline-block;
 }
 
@@ -74,56 +79,51 @@ h1 {
      font-family: 'Lobster Two', cursive;
      font-size: 3em;
      color: white;
-     margin: 0 auto;
      text-align: center;
-     padding: 2%;
+     text-transform: none;
+     font-style: italic;
 }
 
 .logos {
-     float: right;
      vertical-align: baseline;
      display: inline-block;
-     padding-right: 1%;
-
-}
-
-.onion {
-     padding: 3%;
-     margin: 0 auto;
 }
 
 footer p {
-     padding: 2%;
      color: white;
      display: inline-block;
 }
-
-
 
 /******************************************
 /* LAYOUT                   
 /*******************************************/
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
      .logo {
-          height: 2em;
+          display: none;
+     }
+
+     .logo2 {
+          padding: 3%;
      }
 
      .hamburger {
-          height: 1.5em;
+          display: none;
+     }
+
+     .hamburger2 {
+          float: right;
+          padding: 4.5% 4% 3% 3%;
+     }
+
+     nav {
+          display: none;
      }
 
      h1 {
           font-size: 2em;
-     }
-
-     .onion {
-          height: 20em;
-     }
-
-     .arrow1, .arrow2 {
-          height: 2.5em;
+          padding: 10%;
      }
 
      .arrow1 {
@@ -133,16 +133,29 @@ footer p {
           transform: scaleX(-1);
           filter: FlipH;
           -ms-filter: "FlipH";
+          padding-top: 45%;
+          padding-left: 5%;
+          vertical-align: top;
+     }
+
+     .arrow2 {
+          padding-top: 45%;
+          padding-left: 5%;
+          vertical-align: top;
+     }
+
+     .maincontent {
+          text-align: center;
+          padding: 5% 0% 15% 0%;
      }
 
      footer p {
-          font-size: .75em;
+          font-size: .85em;
           display: block;
           text-align: center;
      }
 
      .logos {
-          height: 2em;
           margin: 0 auto;
           float: none;
      }
